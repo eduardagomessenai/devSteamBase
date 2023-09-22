@@ -11,9 +11,11 @@ const App = () => {
 
       <Container>
         <Subtitle>promoções</Subtitle>
-        <Container>
-          <SaleCard></SaleCard>
-        </Container>
+        <div className="saleContainer">
+          <SaleCard title={"League of Legends"} fullPrice={199.90} discount={30}/>
+        <SaleCard title={"Dota 2"}  fullPrice={199.90} discount={40}/>
+        <SaleCard title={"Valorant"} fullPrice={199.90} discount={50}/>
+        </div>
       </Container>
     </div>
   );
