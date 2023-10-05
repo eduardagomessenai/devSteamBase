@@ -10,7 +10,7 @@ html {
   color: #fff;
 }
 
-.saleContainer{
+.saleContainer {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -18,9 +18,18 @@ html {
   flex-wrap: wrap;
 }
 
+.gameSession {
+  margin: 5em 0;
+}
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  margin: 1.3em;
+}
+
 @media (max-width: 850px) {
-  .saleContainer{
+  .saleContainer {
     justify-content: center;
   }
-  
 }
