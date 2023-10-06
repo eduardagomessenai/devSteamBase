@@ -14,7 +14,7 @@ const App = () => {
   const handleAddProduct = (info) => {
     setCart([...cart, info]);
   };
-  
+
   //console.log(cart);
 
   return (
@@ -26,18 +26,42 @@ const App = () => {
         <div className="saleContainer">
           <SaleCard
             title={"League of Legends"}
-            fullPrice={199.9}
+            fullPrice={199.99}
             discount={30}
-            onAdd={() => handleAddProduct( {
-          name: "League of Legends",
-          price: 199.99-199.99 * 0.3,
-          img: "League of Legends"
-            })}
+            onAdd={() =>
+              handleAddProduct({
+                name: "League of Legends",
+                price: 199.99 - 199.99 * 0.3,
+                img: "League of Legends",
+              })
+            }
           />
 
-          <SaleCard title={"Dota 2"} fullPrice={199.9} discount={40} />
+          <SaleCard
+            title={"Dota 2"}
+            fullPrice={199.99}
+            discount={40}
+            onAdd={() =>
+              handleAddProduct({
+                name: "Dota 2",
+                price: 199.99 - 199.99 * 0.4,
+                img: "Dota 2",
+              })
+            }
+          />
 
-          <SaleCard title={"Valorant"} fullPrice={199.9} discount={50} />
+          <SaleCard
+            title={"Valorant"}
+            fullPrice={199.99}
+            discount={50}
+            onAdd={() =>
+              handleAddProduct({
+                name: "Valorant",
+                price: 199.99 - 199.99 * 0.5,
+                img: "Valorant",
+              })
+            }
+          />
         </div>
 
         <div className="gameSession">
@@ -46,7 +70,14 @@ const App = () => {
             <GameCard
               title={"CSGO"}
               info={"Ação, Estratégia, Multijogador"}
-              price={99.9}
+              price={99.99}
+              onAdd={() =>
+                handleAddProduct({
+                  name: "Counter Strike: Global Offensive",
+                  price: 199.99 ,
+                  img: "CSGO",
+                })
+              }
             >
               Counter Strike: Global Offensive
             </GameCard>
