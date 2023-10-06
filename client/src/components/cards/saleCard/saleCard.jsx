@@ -19,9 +19,7 @@ const SaleCard = ({ discount, fullPrice, title, onAdd }) => {
             <h4>R${(fullPrice - fullPrice * (discount / 100)).toFixed(2)}</h4>
           </div>
         </div>
-        <Button onClick={onAdd}> 
-        Adicionar ao carrinho
-        </Button>
+        <Button onClick={onAdd}>Adicionar ao carrinho</Button>
       </div>
     </div>
   );

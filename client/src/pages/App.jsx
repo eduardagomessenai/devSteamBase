@@ -5,7 +5,7 @@ import Subtitle from "../components/forms/subtitle/subtitle";
 import Nav from "../components/nav/Nav";
 import "./App.css";
 
-import { cartState } from "/src/atoms/cart";
+import { cartState } from "../atoms/cart";
 import { useRecoilState } from "recoil";
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
     setCart([...cart, info]);
   };
   
-  console.log(cart);
+  //console.log(cart);
 
   return (
     <div>
@@ -30,7 +30,7 @@ const App = () => {
             discount={30}
             onAdd={() => handleAddProduct( {
           name: "League of Legends",
-          price: 99.9,
+          price: 199.99-199.99 * 0.3,
           img: "League of Legends"
             })}
           />
